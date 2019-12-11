@@ -1,0 +1,191 @@
+@font-face {
+  font-family: 'Circe';
+  src: url('../fonts/Circe/Circe-Light/Circe-Light.woff2') format("woff2"), 
+       url('../fonts/Circe/Circe-Light/Circe-Light.woff') format("woff");
+  font-weight: 300;
+  font-display: auto;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Circe';
+  src: url('../fonts/Circe/Circe-Regular/Circe-Regular.woff2') format("woff2"), 
+       url('../fonts/Circe/Circe-Regular/Circe-Regular.woff') format("woff");
+  font-weight: normal;
+  font-display: auto;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Circe';
+  src: url('../fonts/Circe/Circe-Bold/Circe-Bold.woff2') format("woff2"),
+       url('../fonts/Circe/Circe-Bold/Circe-Bold.woff') format("woff");
+  font-weight: bold;
+  font-display: auto;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Century-Gothic';
+  src:  url('../fonts/Century-Gothic/CenturyGothic-Bold.woff2') format("woff2"),
+        url('../fonts/Century-Gothic/CenturyGothic-Bold.woff') format("woff");
+  font-weight: bold;
+  font-display: auto;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Gilroy';
+  src:  url('../fonts/Gilroy/Gilroy-SemiBold/Gilroy-Semibold.woff') format("woff2"),
+        url('../fonts/Gilroy/Gilroy-SemiBold/Gilroy-Semibold.woff') format("woff");
+  font-weight: 900;
+  font-display: auto;
+  font-style: normal;
+}
+$Circe: 'Circe', sans-serif;
+$Century: 'Century-Gothic', sans-serif;
+$Gilroy: 'Gilroy', sans-serif;
+
+@font-face {
+  font-family: 'icon-font';
+  src:  url('../fonts/icon-font/icon-font.eot?zapzd9');
+  src:  url('../fonts/icon-font/icon-font.eot?zapzd9#iefix') format('embedded-opentype'),
+    url('../fonts/icon-font/icon-font.ttf?zapzd9') format('truetype'),
+    url('../fonts/icon-font/icon-font.woff?zapzd9') format('woff'),
+    url('../fonts/icon-font/icon-font.svg?zapzd9#icon-font') format('svg');
+  font-weight: normal;
+  font-display: auto;
+  font-style: normal;
+}
+[class^="fa-"], [class*=" fa-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icon-font' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.fa-test:before {
+  content: "\e926";
+}
+.fa-briefcase:before {
+  content: "\e910";
+}
+.fa-coins:before {
+  content: "\e913";
+}
+.fa-exchange:before {
+  content: "\e915";
+}
+.fa-invest:before {
+  content: "\e91b";
+}
+.fa-languages:before {
+  content: "\e91c";
+}
+.fa-respect:before {
+  content: "\e91d";
+}
+.fa-statistics:before {
+  content: "\e91e";
+}
+.fa-suitcase:before {
+  content: "\e91f";
+}
+.fa-test-3:before {
+  content: "\e920";
+}
+.fa-day:before {
+  content: "\e921";
+}
+.fa-document-1:before {
+  content: "\e922";
+}
+.fa-event:before {
+  content: "\e923";
+}
+.fa-profile:before {
+  content: "\e924";
+}
+.fa-room-key:before {
+  content: "\e925";
+}
+.fa-search:before {
+  content: "\e903";
+}
+.fa-viber:before {
+  content: "\e901";
+}
+.fa-whatsapp:before {
+  content: "\e904";
+}
+.fa-advise:before {
+  content: "\e906";
+}
+.fa-award:before {
+  content: "\e908";
+}
+.fa-book:before {
+  content: "\e909";
+}
+.fa-browser:before {
+  content: "\e90a";
+}
+.fa-browsing:before {
+  content: "\e90b";
+}
+.fa-budget:before {
+  content: "\e90c";
+}
+.fa-coin:before {
+  content: "\e90d";
+}
+.fa-document:before {
+  content: "\e90e";
+}
+.fa-hourglass:before {
+  content: "\e90f";
+}
+.fa-mortarboard:before {
+  content: "\e912";
+}
+.fa-podium:before {
+  content: "\e914";
+}
+.fa-receipt:before {
+  content: "\e916";
+}
+.fa-tag:before {
+  content: "\e917";
+}
+.fa-warranty:before {
+  content: "\e919";
+}
+.fa-maps:before {
+  content: "\e905";
+}
+.fa-mail:before {
+  content: "\e918";
+}
+.fa-phone:before {
+  content: "\e96b";
+}
+.fa-vk:before {
+  content: "\e907";
+  color: #fff;
+}
+.fa-facebook:before {
+  content: "\e902";
+}
+.fa-instagram:before {
+  content: "\e91a";
+}
+.fa-arrow-prev:before {
+  content: "\e911";
+}
+.fa-arrow-next:before {
+  content: "\e900";
+}

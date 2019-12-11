@@ -1,0 +1,19 @@
+@mixin button {
+	width: fit-content;
+	display: block;
+	padding: 13px 28px;
+	border-radius: 30px;
+	background: linear-gradient(-40deg, #ff6600, #f37f46);
+	border: none;
+	font: 900 14px $Gilroy;
+	text-align: center;
+	text-transform: uppercase;
+	color: #fff;
+	box-sizing: border-box;
+	box-shadow: 0 0 8px 1px rgba(#f37f46, 0.3);
+	cursor: pointer;
+	transition: .5s;
+}
+@mixin placeholder($font, $color) {
+	&::placeholder {  font: $font; color: $color; } 
+}

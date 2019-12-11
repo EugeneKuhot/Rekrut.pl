@@ -1,0 +1,268 @@
+.visually-hidden {
+     position: absolute;
+     width: 1px;
+     height: 1px;
+     margin: -1px;
+     border: 0;
+     padding: 0;
+     white-space: nowrap;
+     -webkit-clip-path: inset(100%);
+             clip-path: inset(100%);
+     clip: rect(0 0 0 0);
+     overflow: hidden;
+}
+
+.form__first-page-wrapper {
+    padding-top: 3px;
+    background: url(../images/illustration/meeting.png) right 35px top 90px no-repeat;
+}
+
+.page-main__wrapper {
+    padding: 100px 0px;
+}
+
+.page-main__registration {
+	font-size: 47px;
+    line-height: 52px;
+    width: 266px;
+    text-align: center;
+    margin: 0px auto 40px;
+    font-weight: bold;
+    border-bottom: 2px solid #0066cc;
+}
+
+.form {
+    margin: 0px 75px;
+    box-shadow: 0 0 15px #f0f0f0;
+    padding: 50px 10px 55px 10px;
+}
+
+.form__e-mail-wrap {
+    display: flex;
+    flex-direction: column;
+}
+
+.form__e-mail-description {
+    text-align: center;
+}
+
+.form__e-mail-field,
+.form__registration-key-field {
+    width: 400px;
+    height: 45px;
+    margin: 10px auto;
+    border: 1px solid #d9d9d9;
+    border-radius: 30px;
+    padding: 0px 20px;
+}
+
+.form__password-wrap {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form__password-description {
+    text-align: center;
+}
+
+.form__password-field {
+    width: 400px;
+    height: 45px;
+    margin: 10px auto;
+    border: 1px solid #d9d9d9;
+    border-radius: 30px;
+    padding: 0 20px;
+}
+
+.form__data-processing {
+    margin-top: 30px;
+    display: flex;
+}
+
+.form__data-processing-checkbox {
+    display: none;
+}
+
+.form__data-processing-description {
+    display: flex;
+    font-size: 16px;
+    font-weight: bold;
+    margin: auto;
+}
+
+.form__data-processing-description::before {
+    display: block;
+    margin-right: 20px;
+    content: "";
+    width: 26px;
+    height: 26px;
+    background-image: url(../images/icon/form-uncheck.png);
+}
+
+.form__data-processing input[type="checkbox"]:checked + label::before {
+    background: url(../images/icon/form-check.png) no-repeat;
+}
+
+.form__button-registration {
+    margin: 35px auto;
+    width: 225px;
+    height: 50px;
+    display: block;
+    padding: 13px 28px;
+    -webkit-border-radius: 30px;
+    border-radius: 30px;
+    background: -webkit-linear-gradient(130deg, #ff6600, #f37f46);
+    background: -o-linear-gradient(130deg, #ff6600, #f37f46);
+    background: linear-gradient(-40deg, #ff6600, #f37f46);
+    border: none;
+    font: 900 14px "Gilroy", sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-box-shadow: 0 0 8px 1px rgba(243, 127, 70, 0.3);
+    box-shadow: 0 0 8px 1px rgba(243, 127, 70, 0.3);
+    cursor: pointer;
+    -webkit-transition: .5s;
+    -o-transition: .5s;
+    transition: .5s;
+}
+
+.form__registration-error-description {
+    max-width: 573px;
+    margin: 17px auto;
+    text-align: center;
+    font-size: 16px;
+    color: #ff8533;
+}
+
+.form__password-recovery-form {
+    font-weight: bold;
+    color: #ff8533;
+}
+
+.form__is-already-account {
+    text-align: center;
+    font-size: 20px;
+}
+
+.form__ready-account-login {
+    font-weight: bold;
+    text-decoration: underline;
+    color: #ff7214;
+}
+
+.form__registration-thank {
+    font-weight: bold;
+    text-align: center;
+    font-size: 24px;
+}
+
+.form__key-description {
+    max-width: 416px;
+    margin: 10px auto;
+    text-align: center;
+}
+
+.form__mistake {
+    font-weight: bold; 
+}
+
+.form__key-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.form__key-name {
+    margin: 10px auto 0;
+}
+
+.form__button-continue {
+    margin: 32px auto 0;
+    width: 228px;
+    height: 50px;
+    display: block;
+    padding: 13px 28px;
+    -webkit-border-radius: 30px;
+    border-radius: 30px;
+    background: -webkit-linear-gradient(130deg, #ff6600, #f37f46);
+    background: -o-linear-gradient(130deg, #ff6600, #f37f46);
+    background: linear-gradient(-40deg, #ff6600, #f37f46);
+    border: none;
+    font: 900 14px "Gilroy", sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-box-shadow: 0 0 8px 1px rgba(243, 127, 70, 0.3);
+    box-shadow: 0 0 8px 1px rgba(243, 127, 70, 0.3);
+    cursor: pointer;
+}
+
+.form__second-page-wrapper {
+    background: url(../images/illustration/thanksgiving.png) right 35px top 65px no-repeat;
+}
+
+@media (max-width: 850px) {
+    .form {
+        margin: 0;
+    }
+
+    .page-main__wrapper {
+        padding: 50px 0px;
+    }
+
+    .page-main__registration {
+        margin: 0px auto 20px;
+        border: none;
+        font-size: 40px;
+    }
+
+    .form__first-page-wrapper,
+    .form__second-page-wrapper {
+        background: none;
+    }
+
+    .form__e-mail-field,
+    .form__password-field,
+    .form__registration-key-field {
+        width: 75%;
+    }
+    .data-processing-check {
+        font-size: 13px;
+    }
+
+    .form__e-mail-description,
+    .form__password-description {
+        font-size: 18px;
+    }
+
+    .form__is-already-account {
+        font-size: 17px;
+    }
+
+    .form__data-processing-description::before {
+        margin-right: 17px;
+    }
+
+    .form__data-processing-description {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 400px) {
+    .form__button-registration,
+    .form__e-mail-field,
+    .form__password-field,
+    .form__button-continue,
+    .form__registration-key-field {
+        width: 100%;
+    }
+
+    .form__key-description {
+        font-size: 16px;
+    }
+}

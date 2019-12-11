@@ -1,0 +1,142 @@
+@import 'fonts';
+@import 'normaliz';
+%page-container {
+	padding: 100px 0;
+}
+$main-color: #0066cc;
+$sub-color: #fe6600;
+$text-color: #616161;
+body {
+	height: 3000px;
+	min-width: 320px;
+	color: $text-color;
+	font: normal 18px/24px $Circe;
+}
+h1,h2,h3,h4,h5,h6, p {
+	margin: 0;
+	font-size: inherit;
+	font-weight: inherit;
+}
+ul, ol { 
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+a {
+	text-decoration: none;
+	outline: none;
+	color: $text-color;
+}
+form {
+	box-sizing: border-box;
+}
+input {
+	outline: none;
+	box-sizing: border-box;
+}
+input[type="submit"] {
+	cursor: pointer;
+}
+select, option {
+	outline: none;
+	cursor: pointer;
+	appearance: none;
+}
+select::-ms-expand { 
+    display: none;
+}
+label {
+	cursor: pointer;
+	margin-bottom: 0;
+}
+main {
+	padding-top: 171px;
+}
+.section-frame { 
+	max-width: 1170px;
+	padding: 0 15px;
+	margin: 0 auto;
+	box-sizing: border-box;
+ }
+ .load * {
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -ms-transition: none !important;
+  -o-transition: none !important;
+}
+ .header {
+ 	background-color: #fff;
+ 	z-index: 5;
+ }
+ .page-title {
+ 	font: bold 40px $Century;
+ 	color: #414141;
+ 	text-align: center;
+ 	span {
+ 		position: relative;
+ 		&::after {
+ 			content: '';
+ 			width: calc(100% - 2px);
+ 			display: block;
+ 			height: 2px;
+ 			background-color: $main-color;
+ 			position: absolute;
+ 			left: 2px;
+ 		}
+ 	}
+ }
+ .page-title-white {
+ 	color: #fff;
+ 	span {
+ 		&::after {
+ 			background-color: #fff;
+ 		}
+ 	}
+ }
+.page-title-left {
+ 	text-align: left;
+ }
+ .irs--flat {
+ 	.irs-line {
+	 	height: 13px;
+	 	background-color: #f2f2f2;
+	 	border-radius: 20px;
+	 }
+	 .irs-bar {
+	 	height: 13px;
+	 	background-color: $sub-color;
+	 }
+	 .irs-handle {
+	 	width: 18px;
+	 	height: 18px;
+	 	border-radius: 50%;
+	 	background-color: #fff;
+	 	border: 1px solid $sub-color;
+	 	box-sizing: border-box;
+	 	cursor: pointer;
+	 	top: 23px;
+	 	i {
+			display: none;
+	 	}
+	 }
+ }
+ .irs--flat .irs-handle>i:first-child {
+ 	display: none;
+ }
+ .irs--flat .irs-from, .irs--flat .irs-to, .irs--flat .irs-single {
+ 	font-size: 16px;
+ 	color: #fff;
+ 	padding: 7px 9px;
+ 	background-color: #414141;
+ 	top: -23px;
+ 	transform: translateX(-2px);
+ }
+ .irs--flat .irs-from:before, .irs--flat .irs-to:before, .irs--flat .irs-single:before {
+ 	border: 5px solid transparent;
+    border-top-color: #414141;
+    bottom: -10px
+ }
+ @import 'mixin';
+ @import 'header';
+ @import 'footer';
+ @import 'form';
