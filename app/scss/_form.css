@@ -265,4 +265,8 @@
     .form__key-description {
         font-size: 16px;
     }
+
+    .page-main__registration {
+        font-size: 35px;
+    }
 }
