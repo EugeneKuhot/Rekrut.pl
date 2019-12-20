@@ -100,7 +100,27 @@
 
 					<input type="submit" class="form__button-continue button" value="продолжить">
 
-				</form>		
+				</form>	
+
+				<div class="certificate-overlay visually-hidden">
+					<form class="free-reg-popup form">
+						<button class="free-reg-popup__close-btn"></button>
+
+						<h1 class="free-reg-popup__title">Бесплатная консультация</h1>
+
+						<label for="number" class="free-reg-popup__phone">Введите Ваш номер телефона
+							<input type="text" class="free-reg-popup__phone-input" name="number" placeholder="Например: +38 050 123 45 67">
+						</label>
+
+						<label for="callback" class="free-reg-popup__callback">Когда Вам позвонить?
+							<select name="callback" class="free-reg-popup__callback-input">
+								<option value="Сейчас">Сейчас</option>
+								<option value="potom">potom</option>
+							</select>
+						</label>
+						<input type="submit" class="form__button-registration" value="отправить">
+					</form>
+				</div>	
 			</div>
 		</div>
 	</main>
@@ -153,5 +173,6 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="js/slick/slick.min.js" ></script>
 	<script src="js/common.js"></script>
+	<script src="js/popup.js"></script>
 </body>
 </html>
