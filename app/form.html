@@ -106,10 +106,10 @@
 					<form class="free-reg-popup form">
 						<button class="free-reg-popup__close-btn"></button>
 
-						<h1 class="free-reg-popup__title">Бесплатная консультация</h1>
+						<h2 class="free-reg-popup__title">Бесплатная консультация</h2>
 
 						<label for="number" class="free-reg-popup__phone">Введите Ваш номер телефона
-							<input type="text" class="free-reg-popup__phone-input" name="number" placeholder="Например: +38 050 123 45 67">
+							<input type="text" pattern="[0-9]{9,}" class="free-reg-popup__phone-input" name="number" placeholder="Например: +38 050 123 45 67" required>
 						</label>
 
 						<label for="callback" class="free-reg-popup__callback">Когда Вам позвонить?
