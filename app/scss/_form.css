@@ -230,6 +230,7 @@
     margin-right: -70px;
     background: transparent;
     outline: none;
+    cursor: pointer;
 }
 
 .close-btn-cross1,
